@@ -1,10 +1,10 @@
 plugins {
-    id 'org.jetbrains.kotlin.multiplatform' version '2.1.0'
-    id 'maven-publish'
+    id("org.jetbrains.kotlin.multiplatform") version "2.1.0"
+    id("maven-publish")
 }
 
-group = 'func.trace'
-version = '1.0.0'
+group = "func.trace"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
@@ -23,7 +23,7 @@ kotlin {
         }
         commonTest {
             dependencies {
-                implementation kotlin('test')
+                implementation(kotlin("test"))
             }
         }
     }
@@ -34,3 +34,4 @@ publishing {
         mavenLocal()
     }
 }
+
